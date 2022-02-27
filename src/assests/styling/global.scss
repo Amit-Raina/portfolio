@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexGrow {
+  flex-grow: 1;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+.alignCenter {
+  align-items: center;
+}
+.fs12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.fs14 {
+  font-size: 14px;
+  line-height: 18px;
+}
+.fs16 {
+  font-size: 16px;
+  line-height: 20px;
+}
+.fs18 {
+  font-size: 18px;
+  line-height: 22px;
+}
+.fs20 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.fwb {
+  font-weight: bold;
+}
+.fwl {
+  font-weight: lighter;
+}
+.ptb15 {
+  padding: 15px 0;
+}
+.ptb20 {
+  padding: 20px 0;
+}
