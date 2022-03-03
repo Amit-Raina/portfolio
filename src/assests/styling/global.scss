@@ -1,3 +1,5 @@
+@import "../../assests/styling/variables.scss";
+
 .flex {
   display: flex;
 }
@@ -8,15 +10,22 @@
 .flexGrow {
   flex-grow: 1;
 }
+
 .justifyCenter {
   justify-content: center;
 }
 .justifySpaceBetween {
   justify-content: space-between;
 }
+
 .alignCenter {
   align-items: center;
 }
+
+.animate {
+  animation: 3s linear 1s infinite alternate slidein;
+}
+
 .fs12 {
   font-size: 12px;
   line-height: 16px;
@@ -37,15 +46,48 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+.cm-title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 800;
+  color: $text-color;
+}
+
 .fwb {
   font-weight: bold;
 }
 .fwl {
   font-weight: lighter;
 }
+
 .ptb15 {
   padding: 15px 0;
 }
 .ptb20 {
   padding: 20px 0;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+
+.w-100 {
+  width: 100%;
 }
