@@ -1,0 +1,33 @@
+@import "../../assests/styling/variables.scss";
+
+.portfolio {
+  .social-handle {
+    min-height: 500px;
+    overflow: hidden;
+    .avatar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 110px;
+        height: auto;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+    // .dynamic-sub-title {
+    // }
+    .social-links {
+      .icon-hover {
+        &:hover {
+          fill: $selected-item-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .about-me {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
