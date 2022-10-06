@@ -19,7 +19,9 @@ function ProgressBar({
         <div className="progress-percentValue">{percentValue}%</div>
       </div>
       <div className="progress-bar-outer-container w-100">
-        <div className="progress-bar-inner-container" style={{ width: `${percentValue}%`, backgroundColor: fillColor }}></div>
+        <div className="progress-bar-inner-container-animate">
+        <div className="progress-bar-inner-container" style={{ width: `${percentValue}%`, backgroundColor: fillColor }} />
+        </div>
       </div>
     </div>
   );

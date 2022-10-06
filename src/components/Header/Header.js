@@ -1,46 +1,48 @@
 import React, { useState } from "react";
+import {useIntl} from 'react-intl'
 import { information } from "../../constant/information";
 import "./header.scss";
 
 const headerOptions = [
   {
     key: "home",
-    label: "Home",
+    labelKey: "header.home",
     route: "",
   },
   {
     key: "about",
-    label: "About",
+    labelKey: "header.about",
     route: "",
   },
   {
     key: "service",
-    label: "Service",
+    labelKey: "header.service",
     route: "",
   },
   {
     key: "experience",
-    label: "Experience",
+    labelKey: "header.experience",
     route: "",
   },
   {
     key: "work",
-    label: "Work",
+    labelKey: "header.work",
     route: "",
   },
   {
     key: "blog",
-    label: "Blog",
+    labelKey: "header.blog",
     route: "",
   },
   {
     key: "contact",
-    label: "Contact",
+    labelKey: "header.contact",
     route: "",
   },
 ];
 
 function Header() {
+  const intl = useIntl();
   const [headerItem, setHeaderItem] = useState("home");
   return (
     <div className="header flex justifySpaceBetween fs16 fwb alignCenter">
@@ -54,7 +56,7 @@ function Header() {
             className={`header-items ${_d?.key === headerItem && "selected"}`}
             onClick={() => setHeaderItem(_d.key)}
           >
-            {_d?.label}
+            {intl.messages[_d.labelKey]}
           </div>
         ))}
       </div>

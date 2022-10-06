@@ -1,8 +1,15 @@
-$body-bg-color: #353353;
-$text-color: #fff;
-$bottom-border-color: #80808086;
-$selected-item-color: #ffd15c;
-$dot-color: #ff4c60;
-$hireMeButtonBg: #ff4c60;
-$popupBg: #302F4E;
-$progressBarOuterBg: #fff;
+$primary-bg: #353353;
+$primary-text-color: #fff;
+$primary-active-text-color: #ffd15c;
+
+$secondary-bg: #f9f9ff;
+$secondary-text-color: #5e5c7f;
+$secondary-active-text-color: #ff4c60;
+$secondary-box-bg: #302F4E;
+
+$ternary-bg: #ff4c60;
+$ternary-text-color: #fff;
+
+$border: 1px solid #80808086;
+$box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+$progress-bar-bg: #fff;

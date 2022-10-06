@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import {useIntl} from 'react-intl'
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -6,11 +7,10 @@ import avatar from "../../../assests/images/avatar.svg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { information } from "../../../constant/information";
 import Button from "../../common/Button";
-
 import "../portfolio.scss";
 
 function SocialHandle() {
-  const [dynamicProffesion] = useState(0);
+  const intl = useIntl();
 
   return (
     <div className="social-handle flexColumn justifyCenter alignCenter">
@@ -21,7 +21,7 @@ function SocialHandle() {
         {information?.fullName}
       </div>
       <div className="dynamic-sub-title mb15 fs18 w-100 flex justifyCenter">
-        I'm a {information?.proffession[dynamicProffesion]}.
+        I'm a {information?.proffession[0]}.
       </div>
       <div className="social-links flex alignCenter w-100 justifyCenter mb25">
         <InstagramIcon className="mr10 icon-hover" />
@@ -30,7 +30,7 @@ function SocialHandle() {
         <LinkedInIcon className="icon-hover" />
       </div>
       <div>
-        <Button text="Hire me" />
+        <Button text={intl.messages['button.hireMe']} />
       </div>
     </div>
   );

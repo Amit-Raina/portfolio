@@ -1,16 +1,17 @@
 import React from "react";
+import {useIntl} from 'react-intl'
 import avatar from "../../../assests/images/avatar.svg";
 import Button from "../../common/Button";
-import Badges from "../../common/Badges";
+// import Badges from "../../common/Badges";
 import { information } from "../../../constant/information";
-
-import "../portfolio.scss";
 import ProgressBar from "../../common/ProgressBar";
+import "../portfolio.scss";
 
 function AboutMe() {
+  const intl = useIntl();
   return (
     <div className="about-me">
-      <div className="cm-title mb25">About Me</div>
+      <div className="cm-title mb25">{intl.messages['section.aboutMe']}</div>
       <div className="flex alignFlexStart mb25">
         <div className="common-avatar-container avatar-w-150">
           <img src={avatar} alt="avatar" className="w-150" />
@@ -18,26 +19,19 @@ function AboutMe() {
         <div className="about-skills w-100 flex">
           <div className="about-me-desc w-50 flexColumn">
             <div className="mb15">{information?.aboutMe}</div>
-            <Button text="Download CV" />
+            <Button text={intl.messages['button.downloadCv']} />
           </div>
           <div className="about-me-skills-level w-50 flexColumn">
-            <div className="mb15">
+            {information.skills.map((skill) => (
+              <div className="mb15">
               <ProgressBar
-                label="React-JS"
-                percentValue={90}
-                fillColor="#FFD15C"
+                label={skill.name}
+                percentValue={skill.percent}
+                fillColor={skill.color}
               />
             </div>
-            <div className="mb15">
-              <ProgressBar
-                label="Next-JS"
-                percentValue={75}
-                fillColor="#FF4C60"
-              />
-            </div>
-            <div>
-              <ProgressBar label="Scss" percentValue={90} fillColor="#6C6CE5" />
-            </div>
+            ))}
+            
           </div>
 
           <div className="common-tip" />
