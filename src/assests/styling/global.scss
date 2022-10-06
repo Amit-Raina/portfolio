@@ -21,6 +21,9 @@
 .alignCenter {
   align-items: center;
 }
+.alignFlexStart {
+  align-items: flex-start;
+}
 
 .animate {
   animation: 3s linear 1s infinite alternate slidein;
@@ -90,4 +93,7 @@
 
 .w-100 {
   width: 100%;
+}
+.w-50 {
+  width: 50%;
 }

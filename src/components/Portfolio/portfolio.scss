@@ -4,19 +4,6 @@
   .social-handle {
     min-height: 500px;
     overflow: hidden;
-    .avatar-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 110px;
-        height: auto;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-    }
-    // .dynamic-sub-title {
-    // }
     .social-links {
       .icon-hover {
         &:hover {
@@ -29,5 +16,46 @@
   .about-me {
     width: 80%;
     margin: 0 auto;
+    .avatar-w-150 {
+      img {
+        width: 150px;
+      }
+    }
+    .about-skills {
+      margin-left: 110px;
+      border-radius: 20px;
+      padding: 30px;
+      background-color: $popupBg;
+      position: relative;
+      .about-me-desc {
+        margin-right: 20px;
+
+        .custon-button {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .common-avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 110px;
+      height: auto;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  .common-tip {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: -11px;
+    top: 60px;
+    transform: rotate(45deg);
+    background-color: $popupBg;
   }
 }

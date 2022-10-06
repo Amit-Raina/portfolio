@@ -14,7 +14,7 @@ function SocialHandle() {
 
   return (
     <div className="social-handle flexColumn justifyCenter alignCenter">
-      <div className="avatar-container mb25 flex justifyCenter w-100">
+      <div className="common-avatar-container mb25 flex justifyCenter w-100">
         <img src={avatar} alt="avatar" />
       </div>
       <div className="cm-title mb15 w-100 flex justifyCenter">
