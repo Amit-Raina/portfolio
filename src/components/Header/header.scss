@@ -1,18 +1,17 @@
 @import "../../assests/styling/variables.scss";
 .header {
-  border-bottom: 1px solid $bottom-border-color;
-  padding: 15px 70px;
-  padding-right: 40px;
+  border-bottom: $border;
+  padding: 15px 0;
   .header-items {
     padding: 10px 20px;
     margin: 0 10px;
     &:hover {
-      color: $selected-item-color;
+      color: $primary-active-text-color;
       cursor: pointer;
     }
   }
   .selected {
-    color: $selected-item-color;
+    color: $primary-active-text-color;
   }
   .name-dot {
     font-size: 35px;
@@ -22,7 +21,7 @@
     .dot {
       width: 8px;
       height: 8px;
-      background-color: $dot-color;
+      background-color: $ternary-bg;
       position: absolute;
       right: 0;
       bottom: 4px;

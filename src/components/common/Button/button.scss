@@ -3,10 +3,8 @@
 .custon-button {
   border-radius: 34px;
   overflow: hidden;
-  font-size: 16px;
-  line-height: 20px;
   padding: 12px 32px;
-  background-color: $hireMeButtonBg;
+  background-color: $ternary-bg;
   font-weight: 800;
   &:hover {
       cursor: pointer;

@@ -21,6 +21,9 @@
 .alignCenter {
   align-items: center;
 }
+.alignFlexStart {
+  align-items: flex-start;
+}
 
 .animate {
   animation: 3s linear 1s infinite alternate slidein;
@@ -46,12 +49,16 @@
   font-size: 20px;
   line-height: 24px;
 }
+.fs30 {
+  font-size: 30px;
+  line-height: 34px;
+}
 
 .cm-title {
   font-size: 36px;
   line-height: 40px;
   font-weight: 800;
-  color: $text-color;
+  color: $primary-text-color;
 }
 
 .fwb {
@@ -61,6 +68,9 @@
   font-weight: lighter;
 }
 
+.p30 {
+  padding: 30px;
+}
 .ptb15 {
   padding: 15px 0;
 }
@@ -68,6 +78,9 @@
   padding: 20px 0;
 }
 
+.mb40 {
+  margin-bottom: 40px;
+}
 .mb25 {
   margin-bottom: 25px;
 }
@@ -84,10 +97,40 @@
 .mr20 {
   margin-right: 20px;
 }
+.mr15 {
+  margin-right: 15px;
+}
 .mr10 {
   margin-right: 10px;
 }
 
 .w-100 {
   width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+
+.common-tip {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: -11px;
+  top: 60px;
+  transform: rotate(45deg);
+  background-color: $secondary-box-bg;
+}
+
+.common-alignment {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.ScrollbarsCustom-TrackY {
+  background: none !important;
 }
