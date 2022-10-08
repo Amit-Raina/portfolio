@@ -16,7 +16,7 @@ function ProgressBar({
     >
       <div className="flex justifySpaceBetween w-100 mb15">
         <div className="progress-text mr10">{label}</div>
-        <div className="progress-percentValue">{percentValue}%</div>
+        <div className="progress-percentValue fs14">{percentValue}%</div>
       </div>
       <div className="progress-bar-outer-container w-100">
         <div className="progress-bar-inner-container-animate">

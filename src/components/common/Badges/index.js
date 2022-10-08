@@ -1,7 +1,6 @@
 import React from "react";
-import "./badges.scss";
 
-function Badges({
+function Badge({
   title = "",
   style = {},
   onClick = () => {},
@@ -10,13 +9,13 @@ function Badges({
 }) {
   return (
     <div className="badges flex justifyCenter" style={style} onClick={onClick}>
-      <div className="badges-icon">{icon}</div>
+      {icon && <div className="badges-icon mr15">{icon}</div>}
       <div className="flexColumn">
-        <div className="badges-count"></div>
-        <div className="badges-title"></div>
+        <div className="badges-count fs30 fwb mb10">{count}</div>
+        <div className="badges-title fs16">{title}</div>
       </div>
     </div>
   );
 }
 
-export default Badges;
+export default Badge;

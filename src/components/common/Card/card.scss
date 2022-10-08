@@ -1,0 +1,22 @@
+@import "../../../assests/styling/variables.scss";
+
+.card {
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius-xlg;
+  &:hover {
+    animation: slideUp 0.4s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
